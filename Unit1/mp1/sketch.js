@@ -1,6 +1,6 @@
 function setup() {
   createCanvas(400, 400);
-  textAlign (LEFT;
+  textAlign (CENTER);
 }
 
 function draw() {
@@ -8,12 +8,20 @@ function draw() {
 
   if (mouseIsPressed) {
     background('#2D936C');
+    rect(width/2, height/2, 200, 100);
   } else {
     background("yellow");
+    ellipse(30, 40, 72, 72);
+    rect(width/2, height/2, 100, 100);
   }
 
 
-  rect(width/2, height/2, 200, 100);
-  text("askldjf askldjf; askldjf a;ksdjf a;skdfja;skdjf", 10,  10, 200, 400");
+
+
+  fill(240, 195, 72);
+
+
+
+
 
 }
