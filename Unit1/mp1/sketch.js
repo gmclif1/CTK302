@@ -17,8 +17,10 @@ function draw() {
     ellipse(170, 110, 72, 72);
     rect(width / 2.5, height / 2, 30, 200);
     rect(220,180, 10, 90, 200);
-    rect(120,180, 10, 90, 200);
-    rotate(90);
+    translate (120,180);
+    rotate(45);
+    rect(0,0, 10, 90, 200);
+
     noStroke();
 
   }
