@@ -7,23 +7,88 @@ function draw() {
 
 
   if (mouseIsPressed) {
-    background('#2D936C');
-    rect(width / 2, height / 2, 200, 100);
-    noStroke();
+    background('#000000');
+
+        fill("orange");
+        rect(155,140, 30, 30);
+        ellipse(170, 110, 72, 72);
+
+        fill("blue");
+        ellipse(178, 101, 10, 10);
+
+        fill("green");
+        ellipse(160, 101, 10, 10);
+
+        ellipse(170, 122, 15, 15);
+
+        fill("grey");
+        rect(width / 3, height / 2.5, 75, 100,10);
+
+        fill("pink");
+        rect(width / 3, 250, 75, 80,10);
+
+        fill("purple");
+        rect(180,340,20, 50, 10);
+
+        fill("green");
+        rect(140,340,20, 50, 10);
+
+
+        translate (120,180);
+        rotate(45);
+        fill ("yellow");
+        rect(0,20, 10, 100, 200);
+
+        translate (140,-110);
+        rotate(90);
+        fill ("orange");
+        rect(0,80, 10, 100, 200);
+
+        noStroke();
 
 
   } else {
-    background("yellow");
+    background("#76a6f5");
+
+    fill("orange");
+    rect(155,140, 30, 30);
     ellipse(170, 110, 72, 72);
-    rect(width / 2.5, height / 2, 30, 200);
-    rect(220,180, 10, 90, 200);
+
+    fill("blue");
+    ellipse(178, 101, 10, 10);
+
+    fill("green");
+    ellipse(160, 101, 10, 10);
+
+    ellipse(170, 122, 15, 15);
+
+    fill("grey");
+    rect(width / 3, height / 2.5, 75, 100,10);
+
+    fill("pink");
+    rect(width / 3, 250, 75, 80,10);
+
+    fill("purple");
+    rect(180,340,20, 50, 10);
+
+    fill("green");
+    rect(140,340,20, 50, 10);
+
+
     translate (120,180);
     rotate(45);
-    rect(0,0, 10, 90, 200);
+    fill ("yellow");
+    rect(0,20, 10, 100, 200);
+
+    translate (-50,-95);
+    rotate(250);
+    fill ("orange");
+    rect(0,80, 10, 100, 200);
 
     noStroke();
 
   }
+
 
 
 
