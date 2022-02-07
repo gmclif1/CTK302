@@ -9,40 +9,50 @@ function draw() {
   if (mouseIsPressed) {
     background('#000000');
 
-        fill("orange");
+    fill("#6e4e1a");
+  ellipse(170, 120, 95, 100);
+
+
+        fill("#ebb26c");
         rect(155,140, 30, 30);
         ellipse(170, 110, 72, 72);
 
-        fill("blue");
-        ellipse(178, 101, 10, 10);
+        fill("#4a433b");
+        ellipse(178, 101, 7, 10);
 
-        fill("green");
-        ellipse(160, 101, 10, 10);
-
-        ellipse(170, 122, 15, 15);
+        fill("#4a433b");
+        ellipse(160, 101, 7, 10);
 
         fill("grey");
-        rect(width / 3, height / 2.5, 75, 100,10);
+        rect(width / 3, height / 2.5, 75, 110,20);
 
-        fill("pink");
-        rect(width / 3, 250, 75, 80,10);
+        fill("#ebb26c");
+rect(178,328,20, 65, 10);
 
-        fill("purple");
-        rect(180,340,20, 50, 10);
+        fill("#ebb26c");
+        rect(145,328,20, 65, 10);
 
-        fill("green");
-        rect(140,340,20, 50, 10);
+
+        fill("grey");
+       rect(136, 254, 70, 90,10);
+
+
+        fill("#c27e91");
+        ellipse(169, 130, 25, 15, 100, 100);
+
+        fill("#4a433b");
+        ellipse(169, 114, 9, 2, 9, 9);
 
 
         translate (120,180);
         rotate(45);
-        fill ("yellow");
-        rect(0,20, 10, 100, 200);
+        fill ("grey");
+        rect(10,20,4, 200);
 
         translate (140,-110);
         rotate(90);
-        fill ("orange");
-        rect(0,80, 10, 100, 200);
+        fill ("grey");
+        rect(0,80,4, 200);
 
         noStroke();
 
@@ -50,41 +60,54 @@ function draw() {
   } else {
     background("#76a6f5");
 
-    fill("orange");
+
+    fill("#6e4e1a");
+  ellipse(170, 120, 85, 100);
+
+
+    fill("#ebb26c");
     rect(155,140, 30, 30);
     ellipse(170, 110, 72, 72);
 
-    fill("blue");
-    ellipse(178, 101, 10, 10);
+    fill("#4a433b");
+    ellipse(178, 101, 5, 7);
 
-    fill("green");
-    ellipse(160, 101, 10, 10);
+    fill("#4a433b");
+    ellipse(160, 101, 5, 7);
 
-    fill("grey");
-    rect(width / 3, height / 2.5, 75, 100,10);
+    fill("#1b8756");
+    rect(width / 3, height / 2.5, 75, 110,20);
 
-    fill("purple");
-    rect(180,328,20, 65, 10);
+    fill("#ebb26c");
+    rect(178,328,20, 65, 10);
 
-    fill("green");
-    rect(140,328,20, 65, 10);
+    fill("#ebb26c");
+    rect(145,328,20, 65, 10);
 
-    fill("pink");
+
+    fill("#2a315c");
     rect(136, 254, 70, 90,10);
+
+
+    fill("#c27e91");
+    ellipse(169, 125, 25, 4, 100, 100);
+
+fill("#4a433b");
+    ellipse(169, 114, 9, 2, 9, 9);
+
+
 
     translate (120,180);
     rotate(45);
-    fill ("yellow");
-    rect(0,20, 10, 100, 200);
+    fill ("#ebb26c");
+    rect(-8,-32, 10, 100, 250);
 
     translate (-50,-95);
     rotate(250);
-    fill ("orange");
-    rect(0,80, 10, 100, 200);
+    fill ("#ebb26c");
+    rect(-5,79, 10, 100, 200);
 
 
-    fill("pink");
-    ellipse(-40, 25, -40, 50, 10, 40, 40);
 
 
     noStroke();
