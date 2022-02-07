@@ -4,7 +4,7 @@ let paper;
 
 
 function setup() {
-  createCanvas(1000, 1000);
+  createCanvas(2000, 2000);
    rectMode(CENTER);
   face = loadImage("assets/face.png");
  freelance= loadImage("assets/freelance.jpg");
