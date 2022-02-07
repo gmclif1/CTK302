@@ -15,10 +15,10 @@ function draw() {
 
         fill("#ebb26c");
         rect(155,140, 30, 30);
-        ellipse(170, 110, 72, 72);
+        ellipse(170, 110, 65, 72);
 
         fill("#4a433b");
-        ellipse(178, 101, 7, 10);
+ellipse(178, 101, 7, 10);
 
         fill("#4a433b");
         ellipse(160, 101, 7, 10);
@@ -26,15 +26,15 @@ function draw() {
         fill("grey");
         rect(width / 3, height / 2.5, 75, 110,20);
 
-        fill("#ebb26c");
-rect(178,328,20, 65, 10);
-
-        fill("#ebb26c");
-        rect(145,328,20, 65, 10);
-
+        fill("grey");
+rect(190,280,4,180);
 
         fill("grey");
-       rect(136, 254, 70, 90,10);
+        rect(150,280,4, 180);
+
+
+    //    fill("grey");
+    //   rect(136, 254, 70, 90,10);
 
 
         fill("#c27e91");
@@ -47,12 +47,12 @@ rect(178,328,20, 65, 10);
         translate (120,180);
         rotate(45);
         fill ("grey");
-        rect(10,20,4, 200);
+        rect(10,20,4, 100);
 
         translate (140,-110);
         rotate(90);
         fill ("grey");
-        rect(0,80,4, 200);
+        rect(0,80,4, 150);
 
         noStroke();
 
@@ -67,7 +67,7 @@ rect(178,328,20, 65, 10);
 
     fill("#ebb26c");
     rect(155,140, 30, 30);
-    ellipse(170, 110, 72, 72);
+    ellipse(170, 110, 65, 72);
 
     fill("#4a433b");
     ellipse(178, 101, 5, 7);
