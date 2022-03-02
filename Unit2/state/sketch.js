@@ -35,7 +35,7 @@ function draw() {
       text("2", 100, 100);
       for (let j =0; j<200; j++){
       for (let i =0; i< 50; i++) {
-      ellipse(i*20,j*20,10,10);
+      ellipse(i*11,j*11,17,10);
       }
     }
       break;
@@ -43,11 +43,21 @@ function draw() {
       case 3:
         background ("grey");
         text("3", 100, 100);
+        for (let j =0; j<200; j++){
+        for (let i =0; i< 50; i++) {
+        rect(i*30,j*30,27,27);
+      }
+    }
         break;
 
         case 4:
           background ("purple");
           text("4", 100, 100);
+          for (let j =0; j<200; j++){
+          for (let i =0; i< 50; i++) {
+          ellipse(i*30,j*30,9,27);
+        }
+      }
           break;
 
   }
