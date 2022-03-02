@@ -11,7 +11,6 @@ function draw() {
 
     case 0:
       background("grey");
-      text("Why does Waldo wear a striped shirt? ", 100, 100);
       break;
 
 
@@ -19,7 +18,6 @@ function draw() {
 
     case 1:
       background("red");
-      text("Because he doesn’t want to be spotted.", 100, 100);
 
   }
 
