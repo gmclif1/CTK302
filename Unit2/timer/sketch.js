@@ -1,18 +1,27 @@
-let state = 0;
+let myState = 0;
 let timer = 0;
 
 function setup() {
-
-
   createCanvas(400, 400);
+  rectMode(CENTER);
 }
+
 
 function draw() {
+  timer++;
+  if (timer > 2*60){
+    timer = 0;
+    myState++;
+    if (myState>1){
+      myState = 0;
+    }
+  }
 
-  background(100);
+
+
 }
 
-switch (state) {
+switch (myState) {
 
   case 0:
     background("yellow");
