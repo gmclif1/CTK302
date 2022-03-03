@@ -2,8 +2,8 @@ let Muroslant, Roboto;
 
 function setup() {
   createCanvas(500, 500);
-  Muroslant= loadFont("assets//muro/Muroslant.otf");
-  roboto= loadFont("assets//roboto/RobotoBlack.tff");
+  Muroslant= loadFont("assets/muro/Muroslant.otf");
+  Roboto= loadFont("assets/roboto/RobotoBlack.tff");
 }
 
 function draw() {
@@ -12,7 +12,7 @@ function draw() {
   background(100);
   text("text text", 100, 200);
 
-textFont(roboto, 10);
+textFont(Roboto, 10);
 textSize(20);
 text("how are you", 200,400);
 
