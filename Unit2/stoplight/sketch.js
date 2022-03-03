@@ -14,7 +14,7 @@ function draw() {
 
   background(100);
   background ("white");
-  fill("yellow");
+  fill("black");
   rect(width/2,height/2, 200,600);
   timer++ ;
   if (timer>3*60){
@@ -37,14 +37,14 @@ function draw() {
     case 0://red light
 
 
+    velor = 10;
       fill("red");
-      velor =0;
-      ellipse(width/2, height/2 -170,150,150);
-       ellipse(width/2, height/2, 150,150);
-      fill("gray");
-      ellipse(width/2, height/2 +170,150,150);
-      fill("gray");
+    ellipse(width/2, height/2 -170,150,150);
+      fill("grey");
+     ellipse(width/2, height/2, 150,150);
 
+    fill("grey");
+    ellipse(width/2, height/2 +170,150,150);
 
         //text("0", 100, 100);
       break;
@@ -52,26 +52,30 @@ function draw() {
     case 1: //green light
 
 
-          fill("yellow");
+
       velor = 10;
+        fill("grey");
       ellipse(width/2, height/2 -170,150,150);
+        fill("grey");
        ellipse(width/2, height/2, 150,150);
-      fill("gray");
-      ellipse(width/2, height/2 +170,150,150);
+
       fill("green");
+      ellipse(width/2, height/2 +170,150,150);
+
 
        // text("1", 100, 100);
       break;
 
     case 2: //yellow light
 
-      fill("green");
-      velor = 20;
-      ellipse(width/2, height/2 -170,150,150);
-       ellipse(width/2, height/2, 150,150);
+    velor = 10;
+      fill("grey");
+    ellipse(width/2, height/2 -170,150,150);
       fill("yellow");
-      ellipse(width/2, height/2 +170,150,150);
-      fill("gray");
+     ellipse(width/2, height/2, 150,150);
+
+    fill("grey");
+    ellipse(width/2, height/2 +170,150,150);
 
 
      // text("2", 100, 100);
