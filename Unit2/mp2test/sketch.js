@@ -1,10 +1,8 @@
 let state = 0;
 let timer = 0;
-//let Shirkhand;
 
 function setup() {
   createCanvas(400, 400);
-  //Shirkhand = loadFont("assets/Shirkhand/Shirkhand-Regular.tff");
 }
 
 
@@ -22,7 +20,6 @@ function draw() {
       fill("black");
 
 
-    //  textFont(Shirkhand, 92);
       textSize(12);
       text("ENTER SPACE", 168, 160);
       textAlign(CENTER);
@@ -96,10 +93,6 @@ function draw() {
 
 
       break;
-
-
-
-
 
 
     case 2:
