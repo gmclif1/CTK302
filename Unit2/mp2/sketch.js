@@ -1,112 +1,119 @@
-let myState = 0;
-let myTimer = 0;
-let font;
-//var x = 0;
-//let mic;
-//let y = 337;
-//var vol = 0;
-//var bk;
-//var gam
-
-
-//function preload() {
-  //city = loadImage('asset/ola.jpg');
-  //gam = loadSound('asset/gamer.mp3')
-//}
+let state = 0;
+let timer = 0;
 
 function setup() {
-  createCanvas(700, 400);
-  font = loadFont('asset/Shirkhand-Regular.ttf');
+  createCanvas(400, 400);
 }
 
-//  mic = new p5.AudioIn();
-//textFont(font); // SETS the font
-  // start the Audio Input.
-  // By default, it does not .connect() (to the computer speakers)
-//  mic.start();
-
-//}
 
 function draw() {
-  fill("black");
-  rect(100, 100, 100, 100);
-
-  textFont(Shirkhand, 92);
-  textSize(48);
-  background(100);
-}
-
-  //image(city, 0, 0);
 
 
-  switch (myState) {
+
+
+  switch (state) {
 
     case 0:
-      //background("#ffcb08");
-      //image(city, 0, 0);
-      fill("red");
-      textSize(20);
+      background("grey");
+      fill("#F69836");
+      rect(120, 130, 100, 50);
+      fill("black");
 
-    //  text("Enter", x, 200);
-    //  x += 3;
-  //    if (x > 700) {
-  //      x = 0;
-      }
 
+      textSize(12);
+      text("ENTER SPACE", 168, 160);
+      textAlign(CENTER);
 
       break;
+
+
+
 
     case 1:
-//planets moving
-fill("black");
-text("Moving Planets", 100, 100);
+    //space
+      background("black");
+      fill("#7F95F5");
+      ellipse(155,140, 60, 60);
+      fill("blue")
+      ellipse(155,140, 100, 20);
 
-      myTimer++;
-      if (myTimer >= 10) {
-        myTimer = 4;
-        myState = 2;
+
+    //pink
+      fill("#EF7FF5");
+      ellipse(255,240, 100, 100);
+
+
+      //dark red
+      fill("#922400");
+      ellipse(290,45, 40, 40);
+
+      //red
+        fill("#D61F00");
+        ellipse(295,40, 10, 10);
+
+        //red
+          fill("#D61F00");
+          ellipse(290,55, 10, 10);
+
+          //red
+            fill("#D61F00");
+            ellipse(280,35, 5, 5);
+
+
+      translate (100,100);
+      rotate(45);
+      fill("yellow");
+      rect(155,160,15,15);
+
+      translate (-20,-100);
+      rotate(270);
+      fill("yellow");
+      rect(10,160,5,5);
+
+      translate (-5,-120);
+      rotate(270);
+      fill("yellow");
+      rect(10,160,5,5);
+
+
+
+
+        noStroke();
+
+
+
+
+
+      timer++;
+      if (timer >= 200) {
+        timer = 4;
+        state = 2;
 
       }
 
+
       break;
+
 
     case 2:
-      //background(100);
-      //image(city, 0, 0);
-    //  vol = mic.getLevel();
-    //  if (vol >= 0.2) {
-
-      //  myState = 3;
-    //    gam.play();
-  //    }
-  //    image(bk, 312, 270);
-      textSize(40);
-      text("Don't Yell", 150, 200);
-
-      break;
-
-
-    case 3:
-    fill("blue");
-      textSize(79);
-      text("GoodBye", 244, 171);
-
-      break;
+    //pattern
+    background("white");
+    fill("black");
+    for (let j =0; j<200; j++){
+    for (let i =0; i< 50; i++) {
+    ellipse(i*11,j*11,17,10);
+    }
+  }
+    break;
 
 }
-
+}
 
 function mouseReleased() {
-  myState++;
-  if (myState > 1) state = 0;
+  if ((mouseX > 100) && (mouseX < 200) && (mouseY > 100) && (mouseY < 200)) {
+    state++;
+    if (state > 1) state = 0;
+  }
+
 
 }
-
-  if (myState == 4) {
-    myState = 0;
-  }
-//  console.log(mouseX + "," + mouseY);
-//}
-//function touchStarted() {
-//  getAudioContext().resume();
-//}
