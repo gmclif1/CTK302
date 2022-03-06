@@ -2,27 +2,40 @@ let state =0;
 let song1, song2, song3;
 
 
+function preload(){
+  song1=loadSound("assets/bounce.mp3");
+  song2=loadSound("assets/her.mp3");
+  song3=loadSound("assets/nola.mp3");
+
+  song1.loop();
+  song1.pause();
+  song2.loop();
+  song2.pause();
+  song3.loop();
+  song3.pause();
+
+}
+
 
 function setup() {
   createCanvas(500, 500);
-  funtion preload(){
-    song1=loadSound("assets/bounce.mp3");
-    song2=loadSound("assets/her.mp3");
-    song3=loadSound("assets/nola.mp3");
 
-  }
 
 }
 
 function draw() {
+
+background(100);
 switch (state) {
+
   case 0:
+  text("1",100,100);
   song1.play();
   state = 1;
   break;
 
   case 1:
-  background("red");
+  text("listen to song 1",100,100);
   break;
 
   case 2:
@@ -31,7 +44,7 @@ switch (state) {
   break;
 
   case 3:
-  background("blue");
+  text("listen to song 2",100,100);
   break;
 
   case 4:
@@ -40,14 +53,22 @@ switch (state) {
   break;
 
   case 5:
+  text("listen to song 3",100,100);
   break;
 }
 
 }
 
-function mouseRelased(){
+function mousePressed(){
+
   state++;
-  if (state>5){
-    state =0;
-  }
+  if (state>5) state =0;
+
+  song1.stop();
+  song2.stop();
+  song3.stop();
+
+
+
+
 }
