@@ -5,10 +5,11 @@ let eyes;
 
 
 function setup() {
+
   createCanvas(400, 400);
-  face = loadImage("assets/chase.jpg");
+  chase = loadImage("assets/chase.jpg");
   freelance = loadImage("assets/freelance.jpg");
-  paper = loadImage("assets/eyes.jpeg");
+  eyes = loadImage("assets/eyes.jpeg");
 }
 
 function draw() {
@@ -23,7 +24,7 @@ function draw() {
 
     case 1:
       text("it's kind of lonely here", 5, 22);
-        image(chase, width / 2, 300, 100, 100);
+      image(chase,200,200, 100, 100);
       break;
 
     case 2:
