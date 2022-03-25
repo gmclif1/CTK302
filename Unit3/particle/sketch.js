@@ -35,7 +35,7 @@ this.r = random(255);
 this.g = random(255);
 this.b = random(255);
 this.a = random(255);
-this.s = random(5,20);
+//this.s = random(5,20);
     // initialize your attributes here
 
   }
@@ -44,7 +44,9 @@ this.s = random(5,20);
 
 display() {
 fill(this.r, this.g, this.b, this.a);
-ellipse(this.pos.x,this.pos.y,this.s);
+//ellipse(this.pos.x,this.pos.y,this.s);
+text("flow",this.pos.x,this.pos.y);
+textSize (20);
  }
 
 
