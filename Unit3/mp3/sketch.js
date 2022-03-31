@@ -53,7 +53,7 @@ function draw() {
 
 //  image(birdd, 400, 400, (500, 500));
       image(bg, 0, 0, width, height);
-     textFont("misto");
+     textFont(misto);
     textSize(50);
       text("Pop the Blimp",550, 400);
   //      song.play();
