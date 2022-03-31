@@ -34,7 +34,7 @@ function setup() {
 
 
 
-  misto = loadFont("misto/misto.otf");
+  misto = loadFont("misto/Misto.otf");
 
     bird = loadImage("images/bird.png");
 
@@ -53,7 +53,7 @@ function draw() {
 
 //  image(birdd, 400, 400, (500, 500));
       image(bg, 0, 0, width, height);
-     textFont(misto);
+     textFont(Misto);
     textSize(50);
       text("Pop the Blimp",550, 400);
   //      song.play();
