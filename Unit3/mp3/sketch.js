@@ -5,10 +5,18 @@ let timer = 0;
 let misto;
 let bg;
 let bird;
+let song;
+
+
+//  function preload(){
+    // song = loadSound("song/heal.mp4");
+
+// }
 
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
+
 
 
   // Spawn one object
@@ -48,6 +56,10 @@ function draw() {
      textFont("misto");
     textSize(50);
       text("Pop the Blimp",550, 400);
+  //      song.play();
+
+
+
 
 //      fill("black");
 
