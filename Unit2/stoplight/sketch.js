@@ -37,7 +37,7 @@ function draw() {
     case 0://red light
 
 
-    velor = 10;
+    velor = 0;
       fill("red");
     ellipse(width/2, height/2 -170,150,150);
       fill("grey");
@@ -53,7 +53,7 @@ function draw() {
 
 
 
-      velor = 10;
+      velor = 20;
         fill("grey");
       ellipse(width/2, height/2 -170,150,150);
         fill("grey");
