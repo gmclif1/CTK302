@@ -14,7 +14,7 @@ function setup() {
 
 
 
-  bunnyImage = loadImage("assets/bunny.jpg");
+  bunnyImage = loadImage("assets/images.jpg");
   imageMode(CENTER);
   rectMode(CENTER);
 
