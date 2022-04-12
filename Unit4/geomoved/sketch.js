@@ -1,16 +1,16 @@
 var num;
 var distance;
-var font1, font2;
+//var font1, font2;
 
 var locationData;
 
 
 function preload() {
   locationData = getCurrentPosition();
-  font1 = loadFont("assets/Mohave-Light.ttf");
+//  font1 = loadFont("assets/Mohave-Light.ttf");
 }
 
-function setup() { 
+function setup() {
   // createCanvas(windowWidth, windowHeight);
     createCanvas(displayWidth, displayHeight);
   num = 0;
