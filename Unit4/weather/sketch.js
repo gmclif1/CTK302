@@ -13,7 +13,7 @@ function setup() {
   // HERE is the call to get the weather. We build the string first.
 
   let myCityString =
-    "https://api.openweathermap.org/data/2.5/weather?q=Normal,IL,US&units=imperial&";
+    "https://api.openweathermap.org/data/2.5/weather?q=Denver,CO,US&units=imperial&";
 
   //You can also use "zipcode"
   // substitute zip=61820 for q=Normal,IL,US
@@ -54,20 +54,24 @@ function draw() {
       fill("black");
       text("What is the weather in " + weather.name + "?", 20, 20);
       text("windspeed is " + windspeed, 20, 40);
-      text("temperature is" + temperature,20,60);
+      text("temperature is " + temperature, 20,60);
       text(desc,20,80);
 
 
     //  thermomter
+      fill("blue");
     y=map(temperature, -10,110,5,height-10);
-    rect(width-30,height-10,10,-temperature);
+    rect(width-30,height-10,10,-y);
 
 
 
       // cloud
       fill("white");
       noStroke();
-      ellipse(x, 300, 200, 100);
+    ellipse(x, 250,100, 50, 30);
+     ellipse(x, 235, 50, 50, 30);
+
+    //  ellipse(x,250, 50, 70,50);
 
       // move the cloud's x position
       x = x + windspeed / 3;
