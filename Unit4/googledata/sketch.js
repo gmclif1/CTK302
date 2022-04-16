@@ -3,7 +3,8 @@ let url = "";
 
 function setup() {
 //  let key = "1xG5lzBtJV3gK61ZE_qdku3ms9-pCJqwl0T8RVHI11m0"; // this is KEY of the URL from the sheet
-let key ="1yoUufAQiGxaliwKitj1KLzvZoUC2KJKOlfWS9imjPK8";
+//let key ="1yoUufAQiGxaliwKitj1KLzvZoUC2KJKOlfWS9imjPK8";
+let key="1mL74O7b_Lz4Rc4RSk-AJ_orIzJVvyZYMKSVW2DVpxm8";
   url = "https://opensheet.vercel.app/" + key + "/Form+Responses+1"; // here I'm making the string for loadJSON.
 
   loadJSON(url, gotData);
@@ -24,10 +25,11 @@ function gotData(data) {
   for (let i = 0; i < data.length; i++) {
     bubbles.push(
       new Bubble(
-        data[i]["most drip"],
-        data[i]["least drip"],
-        data[i]["gets aux"],
-        data[i]["worst music taste"])); // THESE NEED TO MATCH SPREADSHEET
+        data[i]["morning or night"],
+        data[i]["energy level for today"],
+        data[i]["summer or winter"],
+        data[i]["pineapple on pizza"],
+        data[i]["hot or iced coffee"])); // THESE NEED TO MATCH SPREADSHEET
 
   }
 }
@@ -43,12 +45,13 @@ function draw() {
 
 // my Bubble class
 class Bubble {
-  constructor(most, least, aux, music) {
+  constructor(day, energy, season, food, coffee) {
     // only the order of these parameters matters!
-    this.most = most;
-    this.least = least;
-    this.aux = aux;
-    this.music = music;
+    this.day = day;
+    this.energy = energy;
+    this.season = season;
+    this.food = food;
+    this.coffee = coffee;
     this.pos = createVector(random(width), random(height));
     this.vel = createVector(random(2, 5), 0);
   }
@@ -59,7 +62,7 @@ class Bubble {
     ellipse(this.pos.x, this.pos.y+10, 120, 120);
     fill("white");
     text(
-      this.most + "\n" + this.least + "\n" + this.aux + "\n" + this.music,
+      this.day + "\n" + this.energy + "\n" + this.season + "\n" + this.food, + "\n" + this.coffee,
       this.pos.x,
       this.pos.y
     );

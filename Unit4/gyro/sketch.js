@@ -8,9 +8,12 @@ let yPosition = 0;
 let x = 0, y = 0, z = 0 ; // accelerometer data
 
 
+
 function setup() {
 
   createCanvas(windowWidth, windowHeight);
+
+
 
 
 
@@ -60,9 +63,12 @@ function draw() {
   // Text that makes CTK type in the background
   fill('white');
   noStroke();
-  textSize(300);
+  textSize(100);
   textAlign(CENTER);
-  text("ctk", width / 2, height / 2);
+  text("happy easter", width / 2, height / 2);
+
+
+
 
 }
 
