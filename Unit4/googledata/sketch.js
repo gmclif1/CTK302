@@ -35,7 +35,7 @@ function gotData(data) {
 }
 
 function draw() {
-  background("blue");
+  background("grey");
 
   // // iterate through the bubbles and display the objects!
   for (let i = 0; i < bubbles.length; i++) {
@@ -59,14 +59,9 @@ class Bubble {
   display() {
     stroke("red");
     noFill();
-    ellipse(this.pos.x, this.pos.y+10, 120, 120);
+    rect(this.pos.x, this.pos.y+10, 120, 120);
     fill("white");
-    text(
-      this.day + "\n" + this.energy + "\n" + this.season + "\n" + this.food, + "\n" + this.coffee,
-      this.pos.x,
-      this.pos.y
-    );
-
+text(this.day + "\n" + this.energy + "\n" + this.season + "\n" + this.food + "\n" + this.coffee, this.pos.x,this.pos.y);
     this.pos.add(this.vel) ;
     if (this.pos.x > width) this.pos.x = 0 ;
 
